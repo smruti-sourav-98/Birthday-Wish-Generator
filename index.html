@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🎂 Birthday Wish Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="generator-wrapper">
+        <div class="generator-card">
+            <h1>✨ Birthday Wish Maker</h1>
+            <p class="subhead">Create a magical birthday website for your loved one ❤️</p>
+
+            <form id="generatorForm">
+                <div class="form-group">
+                    <label>What do you call him/her? <span>*</span></label>
+                    <input type="text" id="nickname" placeholder="e.g. My World, My Love, Bapa..." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Photos <span>* (minimum 6)</span></label>
+                    <div class="file-upload-area" id="fileDropArea">
+                        <p>📸 Click or drag to select photos</p>
+                        <p style="font-size:0.75rem; opacity:0.5;">JPG, PNG, WEBP</p>
+                        <div class="file-count" id="fileCount">0 images selected</div>
+                        <input type="file" id="imageInput" accept="image/*" multiple />
+                    </div>
+                    <div class="preview-grid" id="previewGrid"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Name for the Love Game <span>*</span></label>
+                    <input type="text" id="gameName" placeholder="e.g. SMRUTI, ANANYA..." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Relation with the birthday person <span>*</span></label>
+                    <input type="text" id="relation" placeholder="e.g. Father, Mother, Wife, Husband..." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Your Heartfelt Wish <span>*</span></label>
+                    <textarea id="wishMessage" rows="5" placeholder="Write your special birthday wish in your own words..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-generate">🎁 Generate Birthday Website</button>
+            </form>
+
+            <div id="generatedLinkArea" class="generated-link-area hidden">
+                <p style="width:100%; text-align:center; margin-bottom:8px; font-size:0.85rem; opacity:0.7;">
+                    ✅ Your birthday website is ready! Download and share the file:
+                </p>
+                <input type="text" id="generatedLink" readonly value="birthday_website.html" />
+                <div class="btn-group">
+                    <button class="copy-btn" id="downloadBtn" style="background:rgba(74, 222, 128, 0.3);">⬇️ Download</button>
+                    <button class="copy-btn" id="openLinkBtn" style="background:rgba(245,87,108,0.3);">👁️ Preview</button>
+                </div>
+            </div>
+
+            <div class="footer-note">💖 Made with love · Share the downloaded file with your special person</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
