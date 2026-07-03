@@ -1,5 +1,5 @@
 
-var GENERATOR_URL = 'https://yourusername.github.io/birthday-generator/';
+var GENERATOR_URL = 'https://birthday-wish-generator.onrender.com/';
 // ============================================================
 //  DOM REFS
 // ============================================================
